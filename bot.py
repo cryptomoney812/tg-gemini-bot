@@ -7,8 +7,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TELEGRAM_TOKEN = os.environ["8510711176:AAFWGQmLRyxr9qfj0Kn_2YSQwESPzpMbw-Y"]
-GEMINI_KEY = os.environ["AIzaSyBHh16GaQizuRSSixCZ843etFtKCMgSBCA"]
+TELEGRAM_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+GEMINI_KEY = os.environ["GEMINI_API_KEY"]
 
 genai.configure(api_key=GEMINI_KEY)
 model = genai.GenerativeModel(
